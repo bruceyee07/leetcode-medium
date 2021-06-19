@@ -1,5 +1,5 @@
 /**
- * @description https://leetcode-cn.com/problems/2-keys-keyboard/
+ * @description https://leetcode.com/problems/2-keys-keyboard/
  * @param {number} n
  * @return {number}
  */
