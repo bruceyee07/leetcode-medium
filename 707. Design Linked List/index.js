@@ -1,5 +1,6 @@
 /**
  * @description https://leetcode.com/problems/design-linked-list/
+ * @type self (it means I solved this problem independently)
  * Initialize your data structure here.
  */
 var MyLinkedList = function() {
