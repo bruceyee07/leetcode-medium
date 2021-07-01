@@ -1,35 +1,36 @@
 /**
- * https://leetcode.com/problems/remove-nth-node-from-end-of-list/
- * https://leetcode.com/problems/remove-nth-node-from-end-of-list/discuss/8804/Simple-Java-solution-in-one-pass
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
  * }
  */
-class Solution {
-  public ListNode removeNthFromEnd(ListNode head, int n) {
-    ListNode start = new ListNode(0);
-    ListNode slow = start, fast = start;
-    slow.next = head;
-    
-    // Move fast in front so that the gap between slow and fast becomes n
-    for (int i = 1; i <= n + 1; i++) {
-      fast = fast.next;
-    }
-    // Move fast to the end, maintaining the gap
-    while (fast != null) {
-      slow = slow.next;
-      fast = fast.next;
-    }
-    // Skip the desired node
-    slow.next = slow.next.next;
-    return start.next;
+/**
+ * @description https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+ * @tutorial https://leetcode.com/problems/remove-nth-node-from-end-of-list/discuss/8804/Simple-Java-solution-in-one-pass
+ * @param {ListNode} head
+ * @param {number} n
+ * @return {ListNode}
+ */
+var removeNthFromEnd = function(head, n) {
+  var dummy = new ListNode(-1);
+  dummy.next = head;
+
+  var slow = fast = dummy;
+
+  for (let i = 1; i <= n + 1; i++) {
+    fast = fast.next;
   }
-}
+
+  while (fast) {
+    fast = fast.next;
+    slow = slow.next;
+  }
+
+  slow.next = slow.next.next;
+
+  return dummy.next;
+};
 
 /**
  * A one pass solution can be done using pointers. Move one pointer fast --> n+1 places forward, to maintain a gap of n between 
@@ -53,7 +54,7 @@ class Solution {
  * s ------> s.next
  */
 
-/**
+ /**
  * size = 6
  * n = 2
  * gap = n + 1 = 3
