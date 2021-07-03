@@ -39,6 +39,8 @@ class Solution {
     return dummyHead.next;
   }
 
+  // I am confused with this function
+
   ListNode getMid(ListNode head) {
     ListNode midPrev = null;
     while (head != null && head.next != null) {
