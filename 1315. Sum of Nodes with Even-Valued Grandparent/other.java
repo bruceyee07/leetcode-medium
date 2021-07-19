@@ -18,7 +18,7 @@
  * https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/discuss/477095/Easy-DFS-solution
  */
 class Solution {
-  public static int sum = 0;
+  public int sum = 0;
 
   public int sumEvenGrandparent(TreeNode root) {
     dfs(root, null, null);
@@ -40,4 +40,9 @@ class Solution {
  * test case: [50,null,54,98,6,null,null,null,34]
  * expected: 138
  * output: 156
+ */
+
+/**
+ * here's the reason: https://support.leetcode.com/hc/en-us/articles/360011834174-I-encountered-Wrong-Answer-Runtime-Error-for-a-specific-test-case-When-I-test-my-code-using-this-test-case-it-produced-the-correct-output-Why-
+ * remove the static keyword, then it worked.
  */
