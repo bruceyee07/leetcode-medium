@@ -27,5 +27,6 @@ var constructFromPrePost = function(preorder, postorder) {
     postIndex++;
     return node;
   }
+
   return traverse(preorder, postorder);
 };
