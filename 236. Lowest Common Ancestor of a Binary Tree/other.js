@@ -23,3 +23,7 @@ var lowestCommonAncestor = function(root, p, q) {
 
   return left === null ? right : right === null ? left : root;
 };
+
+/**
+ * 从本解法跟 sample 解法的对比来看，无非就是三元表达式和 if/else 的区别，感觉理论上应该没什么效率上的差别
+ */
