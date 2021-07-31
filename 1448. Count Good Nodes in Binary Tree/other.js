@@ -8,7 +8,7 @@
  */
 /**
  * @description https://leetcode.com/problems/count-good-nodes-in-binary-tree/
- * @tutorial https://leetcode.com/problems/count-good-nodes-in-binary-tree/submissions/
+ * @tutorial https://leetcode.com/problems/count-good-nodes-in-binary-tree/solution/
  * @param {TreeNode} root
  * @return {number}
  */

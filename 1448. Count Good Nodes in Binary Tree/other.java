@@ -15,7 +15,7 @@
  */
 /**
  * https://leetcode.com/problems/count-good-nodes-in-binary-tree/
- * https://leetcode.com/problems/count-good-nodes-in-binary-tree/submissions/
+ * https://leetcode.com/problems/count-good-nodes-in-binary-tree/solution/
  */
 class Solution {
   private int numGoodNodes = 0;
