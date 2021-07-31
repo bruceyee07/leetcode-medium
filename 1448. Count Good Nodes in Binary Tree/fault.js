@@ -20,7 +20,6 @@ var goodNodes = function(root) {
     return 1;
   }
   var paths = findAllPaths(root);
-  console.log('==== paths ====', paths);
   var ans = 1;
   for (let i = 0; i  < paths.length; i++) {
     var curPathExceptRoot = paths[i].slice(1);
