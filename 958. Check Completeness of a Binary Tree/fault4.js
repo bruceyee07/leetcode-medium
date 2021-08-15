@@ -17,7 +17,7 @@ var isCompleteTree = function(root) {
   var levels = levelOrderArr.length;
 
   for (let i = 0; i < levels - 1; i++) {
-    if (levelOrderArr[i].length !== 2 ** i) {
+    if (levelOrderArr[i].filter(Boolean).length !== 2 ** i) {
       return false;
     }
   }
@@ -67,3 +67,7 @@ function getTreeHeight(root) {
   }
   return Math.max(getTreeHeight(root.left), getTreeHeight(root.right)) + 1;
 }
+
+/**
+ * last try...
+ */
