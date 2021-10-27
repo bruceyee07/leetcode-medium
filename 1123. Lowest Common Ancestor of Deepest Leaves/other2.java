@@ -1,8 +1,4 @@
 /**
- * https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/
- * self
- */
-/**
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
