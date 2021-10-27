@@ -38,3 +38,5 @@ class Solution {
     return node;
   }
 }
+
+// same with 865: https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/

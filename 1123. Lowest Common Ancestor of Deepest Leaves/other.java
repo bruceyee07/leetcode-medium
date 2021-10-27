@@ -40,3 +40,6 @@ class Solution {
 // helper function return the subtree height and lca and at the same time.
 // null node will return depth 0,
 // leaves will return depth 1.
+
+
+// same with 865: https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/
