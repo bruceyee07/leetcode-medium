@@ -1,6 +1,7 @@
 /**
  * https://leetcode.com/problems/container-with-most-water/
  * https://leetcode.com/problems/container-with-most-water/discuss/6091/Easy-Concise-Java-O(N)-Solution-with-Proof-and-Explanation
+ * https://leetcode.com/problems/container-with-most-water/discuss/200246/Proof-by-formula
  */
 class Solution {
   public int maxArea(int[] height) {
