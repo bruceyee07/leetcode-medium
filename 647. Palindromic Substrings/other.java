@@ -5,9 +5,9 @@
 class Solution {
   public int countSubstrings(String s) {
     int cnt = 0;
-    for (int i = 0; i < s.length(); i++) {
-      cnt += extendPalindrome(s, i, i);
-      cnt += extendPalindrome(s, i, i + 1);
+    for (int i = 0; i < s.length(); i++) { // i is the mid point
+      cnt += extendPalindrome(s, i, i); // odd length;
+      cnt += extendPalindrome(s, i, i + 1); // even length
     }
     return cnt;
   }
