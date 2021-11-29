@@ -2,6 +2,7 @@
  * https://leetcode.com/problems/number-of-islands/
  * https://leetcode.com/problems/number-of-islands/solution/
  * https://leetcode.com/problems/number-of-islands/discuss/56354/1D-Union-Find-Java-solution-easily-generalized-to-other-problems @optimist81 @chipbk10
+ * Union Find
  */
 class Solution {
   class UnionFind {
